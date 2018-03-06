@@ -2,7 +2,7 @@ const express = require('express');
 var proxy = require('http-proxy-middleware');
 
 
-const PORT = 3002;
+const PORT = 3000;
 const app = express();
 app.use(express.static('public'));
 

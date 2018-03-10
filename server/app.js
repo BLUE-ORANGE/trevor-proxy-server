@@ -5,7 +5,7 @@ require('dotenv').config();
 
 
 const app = express();
-const router = express.Router();
+
 app.use(express.static('public'));
 
 
@@ -16,7 +16,7 @@ app.use(express.static('public'));
 // app.use('*shop*', proxy({target:'http://localhost:3009/', changeOrigin:true}));
 
 
-app.use('/fonts/*', proxy({target:'http://localhost:3003/', changeOrigin:true}));
+// app.use('/fonts/*', proxy({target:'http://localhost:3003/', changeOrigin:true}));
 
 
 // app.use('/fonts/*', proxy({target:'http://localhost:3003/', changeOrigin:true}));

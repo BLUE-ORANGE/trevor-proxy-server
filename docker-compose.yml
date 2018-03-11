@@ -11,7 +11,7 @@ services:
       POSTGRES_DB: etsy-dock
 
   etsy-images:
-    image: trevorold/etsy-product-images:finaldraft
+    image: trevorold/etsy-product-images:final
     restart: always
     environment:
       DB_USER: student
@@ -19,9 +19,9 @@ services:
       DB_NAME: etsy-dock
       DB_HOST: postgres://student:student@db:5432/etsy-dock
       HOST_NAME: 0.0.0.0
-      PORT: 8001
+      PORT: 8000
     ports:
-    - 8001:8001
+    - 8000:8000
   
   etsy-summary:
     image: superhsu/etsy-product-summay:latest
@@ -47,6 +47,5 @@ services:
     ports:
      - 5432:5432
      - 80:80
-     - 8000:8000
      - 3000:3000
     
